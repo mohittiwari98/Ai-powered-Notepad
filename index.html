@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Notepad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <div class="top-bar">
+    <h1>📝 AI Notepad</h1>
+    <button onclick="toggleMode()">🌗 Toggle Mode</button>
+  </div>
+
+  <textarea id="note" placeholder="Type or dictate your notes here..."></textarea>
+
+  <div class="buttons">
+    <button onclick="processNote('summarize')">Summarize</button>
+    <button onclick="processNote('improve')">Suggest Improvements</button>
+    <button onclick="processNote('highlight')">Highlight Points</button>
+    <button onclick="processNote('formal')">Rewrite Formally</button>
+    <button onclick="startDictation()">🎙️ Voice to Text</button>
+    <button onclick="downloadNote()">💾 Save Note</button>
+  </div>
+
+  <div class="output" id="output">✨ AI response will appear here...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
